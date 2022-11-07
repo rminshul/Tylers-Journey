@@ -717,7 +717,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 208bfee20b0c04547900e7d76046958e, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 208bfee20b0c04547900e7d76046958e, type: 3}
       propertyPath: m_LocalScale.x
@@ -1139,7 +1139,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ded9d8fc093832f46a584a164037b6c3, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ded9d8fc093832f46a584a164037b6c3, type: 3}
       propertyPath: m_LocalScale.x
@@ -3077,7 +3077,7 @@ Transform:
   - {fileID: 1192192880}
   - {fileID: 873177770}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1416950252
 MonoBehaviour:
@@ -3510,6 +3510,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 254cdf09f8e4bd34eb3f9a72cf9b3118, type: 3}
   m_PrefabInstance: {fileID: 1571639818}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1608272947 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ded9d8fc093832f46a584a164037b6c3, type: 3}
+  m_PrefabInstance: {fileID: 648942286}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1608272949
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608272947}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.15, z: 0.5}
+  m_Center: {x: 0, y: 0.07, z: 0}
 --- !u!1001 &1656400924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3979,7 +3997,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1897497969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4053,7 +4071,7 @@ MonoBehaviour:
   movementSpeed: 2
   headToLower: {fileID: 963194228}
   crouchYHeadPosition: 1
-  colliderToLower: {fileID: 0}
+  colliderToLower: {fileID: 1897497977}
 --- !u!114 &1897497973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4120,8 +4138,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hatchetPrefab: {fileID: 6286282549632838940, guid: 712ce0ac1d2f6b64586abde9257d0458, type: 3}
   speed: 10
---- !u!65 &1897497977
-BoxCollider:
+--- !u!136 &1897497977
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4130,8 +4148,9 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.5, y: 3.5, z: 2.5}
+  m_Radius: 1.25
+  m_Height: 4
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1910987180
 PrefabInstance:
