@@ -3091,10 +3091,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee475e37b8b5955429017bc3f0254665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
-  playerRb: {fileID: 1416950253}
-  horizontalInput: 0
-  verticalInput: 0
 --- !u!54 &1416950253
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3960,6 +3956,7 @@ GameObject:
   - component: {fileID: 1897497969}
   - component: {fileID: 1897497968}
   - component: {fileID: 1897497976}
+  - component: {fileID: 1897497977}
   m_Layer: 0
   m_Name: Tyler
   m_TagString: Player
@@ -4123,6 +4120,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hatchetPrefab: {fileID: 6286282549632838940, guid: 712ce0ac1d2f6b64586abde9257d0458, type: 3}
   speed: 10
+--- !u!65 &1897497977
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897497967}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5, y: 3.5, z: 2.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1910987180
 PrefabInstance:
   m_ObjectHideFlags: 0
