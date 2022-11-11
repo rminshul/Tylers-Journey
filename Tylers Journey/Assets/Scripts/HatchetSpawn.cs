@@ -7,6 +7,7 @@ public class HatchetSpawn : MonoBehaviour
     
     public GameObject hatchetPrefab;
     public float speed = 10.0f;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -19,17 +20,14 @@ public class HatchetSpawn : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(hatchetPrefab, transform.position, transform.rotation);
+            TriggerSwing();
+            
         }
+      
+    }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            transform.Rotate(Vector3.forward * speed * Time.deltaTime);
-        }
-
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            transform.Rotate(-Vector3.forward * speed * Time.deltaTime);
-        }
+    void TriggerSwing()
+    {
+        animator.SetTrigger("isAttacking");
     }
 }

@@ -29,10 +29,10 @@ public class Canvas : MonoBehaviour
 
     public void LivesLost(object enemy, object player, TextMesh health)
     {
-        if (enemy.transform.position >= player.transform.position)
+        //if (enemy.transform.position >= player.transform.position)
         {
-            lives = lives - 1;
-            canvas.Update(health);
+            //lives = lives - 1;
+            //canvas.Update(health);
         }
     }
 
