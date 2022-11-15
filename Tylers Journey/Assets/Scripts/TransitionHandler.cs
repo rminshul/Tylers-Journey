@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class TransitionHandler : MonoBehaviour
 {
-    private string nextScene = "";
-    private bool disableFadeInAnimation = false;
+    [SerializeField] private string nextScene = "";
+    [SerializeField] private bool disableFadeInAnimation = false;
 
     // Start is called before the first frame update
     void Start()

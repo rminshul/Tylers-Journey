@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SeedHandler : MonoBehaviour
 {
-    private Animator fadeAnimator = null;
+    [SerializeField] private Animator fadeAnimator = null;
 
     // Start is called before the first frame update
     void Start()
